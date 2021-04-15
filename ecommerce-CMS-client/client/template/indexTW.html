@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+</head>
+<body>
+  <div>
+    <nav class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-no-wrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
+      <div class="md:flex-col md:items-stretch md:min-h-full md:flex-no-wrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
+        <button type="button" class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"><i class="fas fa-bars"></i></button>
+        <a href="#/" class="md:block text-left md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-sm uppercase font-bold p-4 px-0 router-link-active"> Vue Notus </a>
+        <ul class="md:hidden items-center flex flex-wrap list-none">
+          <li class="inline-block relative">
+            <div>
+              <a class="text-gray-600 block py-1 px-3"><i class="fas fa-bell"></i></a>
+              <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                <div class="h-0 my-2 border border-solid border-gray-200"></div>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Seprated link </a>
+              </div>
+            </div>
+          </li>
+          <li class="inline-block relative">
+            <div>
+              <a href="#pablo" class="text-gray-600 block">
+                <div class="items-center flex">
+                  <span class="w-12 h-12 text-sm text-white bg-gray-300 inline-flex items-center justify-center rounded-full">
+                    <img alt="..." src="/img/team-1-800x800.53033970.jpg" class="w-full rounded-full align-middle border-none shadow-lg" />
+                  </span>
+                </div>
+              </a>
+              <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                <div class="h-0 my-2 border border-solid border-gray-200"></div>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Seprated link </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded hidden">
+          <div class="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-gray-300">
+            <div class="flex flex-wrap">
+              <div class="w-6/12"><a href="#/" class="md:block text-left md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-sm uppercase font-bold p-4 px-0 router-link-active"> Vue Notus </a></div>
+              <div class="w-6/12 flex justify-end">
+                <button type="button" class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+          <form class="mt-6 mb-4 md:hidden">
+            <div class="mb-3 pt-0">
+              <input
+                type="text"
+                placeholder="Search"
+                class="px-3 py-2 h-12 border border-solid border-gray-600 placeholder-gray-400 text-gray-700 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
+              />
+            </div>
+          </form>
+          <hr class="my-4 md:min-w-full" />
+          <h6 class="md:min-w-full text-gray-600 text-xs uppercase font-bold block pt-1 pb-4 no-underline">Admin Layout Pages</h6>
+          <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+            <li class="items-center">
+              <a href="#/admin/dashboard" class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"><i class="fas fa-tv mr-2 text-sm text-gray-400"></i> Dashboard </a>
+            </li>
+            <li class="items-center">
+              <a href="#/admin/settings" class="text-xs uppercase py-3 font-bold block text-green-500 hover:text-green-600"><i class="fas fa-tools mr-2 text-sm opacity-75"></i> Settings </a>
+            </li>
+            <li class="items-center">
+              <a href="#/admin/tables" class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"><i class="fas fa-table mr-2 text-sm text-gray-400"></i> Tables </a>
+            </li>
+            <li class="items-center">
+              <a href="#/admin/maps" class="text-xs uppercase py-3 font-bold block text-gray-800 hover:text-gray-600"><i class="fas fa-map-marked mr-2 text-sm text-gray-400"></i> Maps </a>
+            </li>
+          </ul>
+          <hr class="my-4 md:min-w-full" />
+        </div>
+      </div>
+    </nav>
+    <div class="relative md:ml-64 bg-gray-200">
+      <nav class="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-no-wrap md:justify-start flex items-center p-4">
+        <div class="w-full mx-autp items-center flex justify-between md:flex-no-wrap flex-wrap md:px-10 px-4">
+          <a href="javascript:void(0)" class="text-white text-sm uppercase hidden lg:inline-block font-semibold"> Dashboard </a>
+          <form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
+            <div class="relative flex w-full flex-wrap items-stretch">
+              <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"><i class="fas fa-search"></i></span>
+              <input type="text" placeholder="Search here..." class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10" />
+            </div>
+          </form>
+          <ul class="flex-col md:flex-row list-none items-center hidden md:flex">
+            <div>
+              <a href="#pablo" class="text-gray-600 block">
+                <div class="items-center flex">
+                  <span class="w-12 h-12 text-sm text-white bg-gray-300 inline-flex items-center justify-center rounded-full">
+                    <img alt="..." src="/img/team-1-800x800.53033970.jpg" class="w-full rounded-full align-middle border-none shadow-lg" />
+                  </span>
+                </div>
+              </a>
+              <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                <div class="h-0 my-2 border border-solid border-gray-200"></div>
+                <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Seprated link </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <div class="relative bg-green-600 md:pt-20 mb-16 pt-12">
+        <!-- card dashboard -->
+        <!-- <div class="px-4 md:px-10 mx-auto w-full">
+          <div>
+            <div class="flex flex-wrap">
+              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-gray-500 uppercase font-bold text-xs">TRAFFIC</h5>
+                        <span class="font-semibold text-xl text-gray-800"> 350,897 </span>
+                      </div>
+                      <div class="relative w-auto pl-4 flex-initial">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-red-500"><i class="far fa-chart-bar"></i></div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                      <span class="mr-2 text-green-500"><i class="fas fa-arrow-up"></i> 3.48% </span><span class="whitespace-no-wrap">Since last month</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-gray-500 uppercase font-bold text-xs">NEW USERS</h5>
+                        <span class="font-semibold text-xl text-gray-800"> 2,356 </span>
+                      </div>
+                      <div class="relative w-auto pl-4 flex-initial">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-orange-500"><i class="fas fa-chart-pie"></i></div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                      <span class="mr-2 text-red-500"><i class="fas fa-arrow-down"></i> 3.48% </span><span class="whitespace-no-wrap">Since last week</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-gray-500 uppercase font-bold text-xs">SALES</h5>
+                        <span class="font-semibold text-xl text-gray-800"> 924 </span>
+                      </div>
+                      <div class="relative w-auto pl-4 flex-initial">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-pink-500"><i class="fas fa-users"></i></div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                      <span class="mr-2 text-orange-500"><i class="fas fa-arrow-down"></i> 1.10% </span><span class="whitespace-no-wrap">Since yesterday</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                  <div class="flex-auto p-4">
+                    <div class="flex flex-wrap">
+                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-gray-500 uppercase font-bold text-xs">PERFORMANCE</h5>
+                        <span class="font-semibold text-xl text-gray-800"> 49,65% </span>
+                      </div>
+                      <div class="relative w-auto pl-4 flex-initial">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-green-500"><i class="fas fa-percent"></i></div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                      <span class="mr-2 text-green-500"><i class="fas fa-arrow-up"></i> 12% </span><span class="whitespace-no-wrap">Since last month</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end card dashboard -->
+      </div>
+      <div class="px-4 md:px-10 mx-auto w-full -m-24">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 pt-20">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-200 border-0">
+              <div class="rounded-t bg-white mb-0 px-6 py-6">
+                <div class="text-center flex justify-between">
+                  <h6 class="text-gray-800 text-xl font-bold">My account</h6>
+                  <button type="button" class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150">
+                    Settings
+                  </button>
+                </div>
+              </div>
+              <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+                <form>
+                  <h6 class="text-gray-500 text-sm mt-3 mb-6 font-bold uppercase">User Information</h6>
+                  <div class="flex flex-wrap">
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> Username </label>
+                        <input type="file" value="lucky.jesse" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150" />
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> Email address </label>
+                        <input
+                          type="email"
+                          value="jesse@example.com"
+                          class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> First Name </label>
+                        <input type="text" value="Lucky" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150" />
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> Last Name </label>
+                        <input type="text" value="Jesse" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150" />
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mt-6 border-b-1 border-gray-400" />
+                  <h6 class="text-gray-500 text-sm mt-3 mb-6 font-bold uppercase">Contact Information</h6>
+                  <div class="flex flex-wrap">
+                    <div class="w-full lg:w-12/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> Address </label>
+                        <input
+                          type="text"
+                          value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                          class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> City </label>
+                        <!-- <input type="email" value="New York" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150" /> -->
+                        <select
+                          class="block w-full text-sm px-3 py-3 transition duration-100 ease-in-out border rounded shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed text-black placeholder-gray-400 bg-white border-gray-300 focus:border-blue-500"
+                        >
+                          <option value="">Select an option</option>
+                          <option value="Option A">Option A</option>
+                          <option value="Option B">Option B</option>
+                          <option value="Option C">Option C</option>
+                          <option value="Option D">Option D</option>
+                          <option value="Option E">Option E</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> Country </label>
+                        <input type="text" value="United States" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150" />
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> Postal Code </label>
+                        <input type="text" value="Postal Code" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150" />
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mt-6 border-b-1 border-gray-400" />
+                  <h6 class="text-gray-500 text-sm mt-3 mb-6 font-bold uppercase">About Me</h6>
+                  <div class="flex flex-wrap">
+                    <div class="w-full lg:w-12/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label htmlfor="grid-password" class="block uppercase text-gray-700 text-xs font-bold mb-2"> About me </label>
+                        <textarea type="text" rows="4" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150">
+   A beautiful UI Kit and Admin for VueJS &amp; Tailwind CSS. It is Free and Open Source.
+                        </textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- profile setting -->
+          <!-- <div class="w-full lg:w-4/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
+              <div class="px-6">
+                <div class="flex flex-wrap justify-center">
+                  <div class="w-full px-4 flex justify-center">
+                    <div class="relative"><img alt="..." src="/img/team-2-800x800.dcfcf3b7.jpg" class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px" /></div>
+                  </div>
+                  <div class="w-full px-4 text-center mt-20">
+                    <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                      <div class="mr-4 p-3 text-center"><span class="text-xl font-bold block uppercase tracking-wide text-gray-700"> 22 </span><span class="text-sm text-gray-500">Friends</span></div>
+                      <div class="mr-4 p-3 text-center"><span class="text-xl font-bold block uppercase tracking-wide text-gray-700"> 10 </span><span class="text-sm text-gray-500">Photos</span></div>
+                      <div class="lg:mr-4 p-3 text-center"><span class="text-xl font-bold block uppercase tracking-wide text-gray-700"> 89 </span><span class="text-sm text-gray-500">Comments</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center mt-12">
+                  <h3 class="text-xl font-semibold leading-normal mb-2 text-gray-800 mb-2">Jenna Stones</h3>
+                  <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"><i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i> Los Angeles, California</div>
+                  <div class="mb-2 text-gray-700 mt-10"><i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i> Solution Manager - Creative Tim Officer</div>
+                  <div class="mb-2 text-gray-700"><i class="fas fa-university mr-2 text-lg text-gray-500"></i> University of Computer Science</div>
+                </div>
+                <div class="mt-10 py-10 border-t border-gray-300 text-center">
+                  <div class="flex flex-wrap justify-center">
+                    <div class="w-full lg:w-9/12 px-4">
+                      <p class="mb-4 text-lg leading-relaxed text-gray-800">
+                        An artist of considerable range, Jenna the name taken by Melbourne-raised, Brooklyn-based Nick Murphy writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An
+                        artist of considerable range.
+                      </p>
+                      <a href="javascript:void(0);" class="font-normal text-green-500"> Show more </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- end profile setting -->
+          <div class="w-full mb-12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-green-900 text-white">
+              <div class="rounded-t mb-0 px-4 py-3 border-0">
+                <div class="flex flex-wrap items-center">
+                  <div class="relative w-full px-4 max-w-full flex-grow flex-1"><h3 class="font-semibold text-lg text-white">Card Tables</h3></div>
+                </div>
+              </div>
+              <div class="block w-full overflow-x-auto">
+                <table class="items-center w-full bg-transparent border-collapse">
+                  <thead>
+                    <tr>
+                      <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left bg-green-800 text-green-300 border-green-700">Project</th>
+                      <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left bg-green-800 text-green-300 border-green-700">Budget</th>
+                      <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left bg-green-800 text-green-300 border-green-700">Status</th>
+                      <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left bg-green-800 text-green-300 border-green-700">Users</th>
+                      <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left bg-green-800 text-green-300 border-green-700">Completion</th>
+                      <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left bg-green-800 text-green-300 border-green-700"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
+                        <img src="/img/bootstrap.ab904daa.jpg" alt="..." class="h-12 w-12 bg-white rounded-full border" /><span class="ml-3 font-bold text-white"> Argon Design System </span>
+                      </th>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">$2,500 USD</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"><i class="fas fa-circle text-orange-500 mr-2"></i> pending</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex">
+                          <img src="/img/team-1-800x800.53033970.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow" />
+                          <img src="/img/team-2-800x800.dcfcf3b7.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-3-800x800.5a0e395b.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-4-470x470.7d13384c.png" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex items-center">
+                          <span class="mr-2">60%</span>
+                          <div class="relative w-full">
+                            <div class="overflow-hidden h-2 text-xs flex rounded bg-red-200"><div class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500" style="width: 60%;"></div></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right">
+                        <div>
+                          <a href="#pablo" class="text-gray-600 py-1 px-3"><i class="fas fa-ellipsis-v"></i></a>
+                          <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
+                        <img src="/img/angular.368685db.jpg" alt="..." class="h-12 w-12 bg-white rounded-full border" /><span class="ml-3 font-bold text-white"> Angular Now UI Kit PRO </span>
+                      </th>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">$1,800 USD</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"><i class="fas fa-circle text-green-500 mr-2"></i> completed</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex">
+                          <img src="/img/team-1-800x800.53033970.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow" />
+                          <img src="/img/team-2-800x800.dcfcf3b7.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-3-800x800.5a0e395b.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-4-470x470.7d13384c.png" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex items-center">
+                          <span class="mr-2">100%</span>
+                          <div class="relative w-full">
+                            <div class="overflow-hidden h-2 text-xs flex rounded bg-green-200"><div class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500" style="width: 100%;"></div></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right">
+                        <div>
+                          <a href="#pablo" class="text-gray-600 py-1 px-3"><i class="fas fa-ellipsis-v"></i></a>
+                          <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
+                        <img src="/img/sketch.e7c82e5c.jpg" alt="..." class="h-12 w-12 bg-white rounded-full border" /><span class="ml-3 font-bold text-white"> Black Dashboard Sketch </span>
+                      </th>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">$3,150 USD</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"><i class="fas fa-circle text-red-500 mr-2"></i> delayed</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex">
+                          <img src="/img/team-1-800x800.53033970.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow" />
+                          <img src="/img/team-2-800x800.dcfcf3b7.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-3-800x800.5a0e395b.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-4-470x470.7d13384c.png" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex items-center">
+                          <span class="mr-2">73%</span>
+                          <div class="relative w-full">
+                            <div class="overflow-hidden h-2 text-xs flex rounded bg-red-200"><div class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500" style="width: 73%;"></div></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right">
+                        <div>
+                          <a href="#pablo" class="text-gray-600 py-1 px-3"><i class="fas fa-ellipsis-v"></i></a>
+                          <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
+                        <img src="/img/react.c4eb3d0b.jpg" alt="..." class="h-12 w-12 bg-white rounded-full border" /><span class="ml-3 font-bold text-white"> React Material Dashboard </span>
+                      </th>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">$4,400 USD</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"><i class="fas fa-circle text-teal-500 mr-2"></i> on schedule</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex">
+                          <img src="/img/team-1-800x800.53033970.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow" />
+                          <img src="/img/team-2-800x800.dcfcf3b7.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-3-800x800.5a0e395b.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-4-470x470.7d13384c.png" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex items-center">
+                          <span class="mr-2">90%</span>
+                          <div class="relative w-full">
+                            <div class="overflow-hidden h-2 text-xs flex rounded bg-teal-200"><div class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-teal-500" style="width: 90%;"></div></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right">
+                        <div>
+                          <a href="#pablo" class="text-gray-600 py-1 px-3"><i class="fas fa-ellipsis-v"></i></a>
+                          <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
+                        <img src="/img/react.c4eb3d0b.jpg" alt="..." class="h-12 w-12 bg-white rounded-full border" /><span class="ml-3 font-bold text-white"> React Material Dashboard </span>
+                      </th>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">$2,200 USD</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"><i class="fas fa-circle text-green-500 mr-2"></i> completed</td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex">
+                          <img src="/img/team-1-800x800.53033970.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow" />
+                          <img src="/img/team-2-800x800.dcfcf3b7.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-3-800x800.5a0e395b.jpg" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                          <img src="/img/team-4-470x470.7d13384c.png" alt="..." class="w-10 h-10 rounded-full border-2 border-gray-100 shadow -ml-4" />
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
+                        <div class="flex items-center">
+                          <span class="mr-2">100%</span>
+                          <div class="relative w-full">
+                            <div class="overflow-hidden h-2 text-xs flex rounded bg-green-200"><div class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500" style="width: 100%;"></div></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-right">
+                        <div>
+                          <a href="#pablo" class="text-gray-600 py-1 px-3"><i class="fas fa-ellipsis-v"></i></a>
+                          <div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 hidden">
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Another action </a>
+                            <a href="javascript:void(0);" class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"> Something else here </a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="block py-4">
+          <div class="container mx-auto px-4">
+            <hr class="mb-4 border-b-1 border-gray-300" />
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+              <div class="w-full md:w-4/12 px-4">
+                <div class="text-sm text-gray-600 font-semibold py-1 text-center md:text-left">
+                  Copyright © 2021 <a href="https://www.creative-tim.com?ref=vn-footer-admin" class="text-gray-600 hover:text-gray-800 text-sm font-semibold py-1"> Creative Tim </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12 px-4">
+                <ul class="flex flex-wrap list-none md:justify-end justify-center">
+                  <li><a href="https://www.creative-tim.com?ref=vn-footer-admin" class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"> Creative Tim </a></li>
+                  <li><a href="https://www.creative-tim.com/presentation?ref=vn-footer-admin" class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"> About Us </a></li>
+                  <li><a href="http://blog.creative-tim.com?ref=vn-footer-admin" class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"> Blog </a></li>
+                  <li><a href="https://github.com/creativetimofficial/vue-notus/blob/master/LICENSE.md?ref=vn-footer-admin" class="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"> MIT License </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.1/umd/popper.min.js" integrity="sha512-ul3M4T/oDyx+ZkmFp1XHshV9C9h1Nd5C4/8vXAhZxAdW5tBDJrxOb/gFNYxR/jrCTORq+UJHQouYrY/bAqEVSQ==" crossorigin="anonymous"></script>
+</body>
+</html>
